@@ -1,6 +1,6 @@
 FROM ubuntu:latest AS build
 COPY . .
-RUN gradle clean package -DskipTests
+RUN ./gradlew clean package -x test
 
 FROM openjdk:19
 COPY --from=build /build/libs/backendApiMicroService-1.jar app.jar
