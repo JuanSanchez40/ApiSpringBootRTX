@@ -1,4 +1,4 @@
- FROM ubuntu:lastest AS build
+ FROM ubuntu:latest AS build
 COPY . .
 RUN gradle clean package -DskipTests
 
