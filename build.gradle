@@ -32,6 +32,8 @@ dependencies {
 	implementation 'joda-time:joda-time:2.9.4'
 	// Dependencia de Spring Data MongoDB
 	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+
+    implementation 'org.mongodb:mongodb-driver-sync:5.2.0'
 }
 
 tasks.named('test') {
