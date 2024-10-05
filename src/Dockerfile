@@ -1,4 +1,4 @@
-FROM gradle:jdk19 AS build
+ FROM ubuntu:lastest AS build
 COPY . .
 RUN gradle clean package -DskipTests
 
