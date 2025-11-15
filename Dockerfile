@@ -5,7 +5,7 @@ COPY . .
 RUN chmod +x gradlew
 RUN ./gradlew bootJar --no-daemon
 
-FROM openjdk:21-jdk-slim
+FROM eclipse-temurin:21-jdk-slim
 EXPOSE 8080
 COPY --from=build /build/libs/backendApiMicroService-1.jar app.jar
 
